@@ -9,6 +9,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: #fff;
+    top: 0;
+    position: sticky;
+    z-index:1;
+
 
 
   }
@@ -49,7 +54,21 @@ header {
   .about__sun-image {
     width: 100px;
     height: 100px;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
   }
+
+  @keyframes rotation{
+    0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 
   .about {
     display: flex;
@@ -198,9 +217,10 @@ header {
 
   .footer__group{
    margin-right: 80px;
+
   }
 
-  h3{
+ footer h3{
   font-size: 16px;
   opacity: 0.7;
   margin-bottom: 30px;
@@ -217,7 +237,7 @@ header {
   margin-bottom: 15px;
   }
 
-
+ 
 
 
 
